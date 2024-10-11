@@ -12,7 +12,8 @@
       <!-- and what type of element it is -->
       <!---------------element-------------------->
       <!--opening tag----><!--the content--><!--closing tag---->
-      <div id="messageDiv"><!--the content--></div>
+      <div id="messageDiv">Secret message<!--the content--></div>
+      <input id="nameInput" type="text" value="" placeholder="enter name" />
     </main>
     <script>
       // where the javascript goes
@@ -31,21 +32,36 @@
       //     tagName: "div",
       // }
 
+      let nameInput = document.getElementById("nameInput");
+      // var nameInput = {
+      //     id: "nameInput",
+      //     value: "",
+      //     tagName: "input",
+      //     type: "text"
+      // }
+
       // #2 Set the element content
+
       // element.innerText = "hi";
       //or
       // element.textContext = "hi";
-      messageDiv.innerText = "hi";
+      //   messageDiv.innerText = "hi";
+
+      // inputElement.value = "Melina"
+      nameInput.value = "Melina";
 
       //#3 Get the element content
-      var currentMessage = messageDiv.innerText ;
+      var currentMessage = messageDiv.innerText;
       console.log(currentMessage);
+
+
+      var currentName = nameInput.value;
+      console.log(currentName);
       
-      
+
       //#4 Create a function to do something, (Ex. set the element content)
 
       //#5 Make that function happen when a user event happens (Ex. add button and on click)
-
     </script>
   </body>
 </html>
