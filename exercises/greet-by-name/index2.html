@@ -24,6 +24,8 @@
       // document is an object with lots of properties that represents the entire html document
       // declare var to hold element then ass into that var whateve is returned from calling the function getElement...
       // function is a verb is an action that can return something
+
+      //1.1 Get div element
       let messageDiv = document.getElementById("messageDiv");
       console.log(messageDiv);
       // var messageDiv = {
@@ -32,6 +34,7 @@
       //     tagName: "div",
       // }
 
+      //1.2 get input element
       let nameInput = document.getElementById("nameInput");
       // var nameInput = {
       //     id: "nameInput",
@@ -42,19 +45,24 @@
 
       // #2 Set the element content
 
+      //2.1 set div content
       // element.innerText = "hi";
       //or
       // element.textContext = "hi";
-      //   messageDiv.innerText = "hi";
 
+      messageDiv.innerText = "hi";
+
+      //2.2 set input content
       // inputElement.value = "Melina"
       nameInput.value = "Melina";
 
       //#3 Get the element content
+
+      //3.1 get div content
       var currentMessage = messageDiv.innerText;
       console.log(currentMessage);
 
-
+      //3/2 get input content
       var currentName = nameInput.value;
       console.log(currentName);
       
