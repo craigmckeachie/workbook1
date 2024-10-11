@@ -13,7 +13,6 @@
       <!---------------element-------------------->
       <!--opening tag----><!--the content--><!--closing tag---->
       <div id="messageDiv"><!--the content--></div>
-    
     </main>
     <script>
       // where the javascript goes
@@ -23,22 +22,20 @@
       //declare var|ass| html file
       // document is an object with lots of properties that represents the entire html document
       // declare var to hold element then ass into that var whateve is returned from calling the function getElement...
-       // function is a verb is an action that can return something     
-        let messageDiv = document.getElementById("messageDiv");
-        console.log(messageDiv);
-        // var messageDiv = {
-        //     id: "messageDiv",
-        //     innerText: "",
-        //     tagName: "div",
-        // }
+      // function is a verb is an action that can return something
+      let messageDiv = document.getElementById("messageDiv");
+      console.log(messageDiv);
+      // var messageDiv = {
+      //     id: "messageDiv",
+      //     innerText: "",
+      //     tagName: "div",
+      // }
 
-
-        // #2 Set the element content
-        // element.innerText = "hi";
-        //or
-        // element.textContext = "hi";
-       
-        
+      // #2 Set the element content
+      // element.innerText = "hi";
+      //or
+      // element.textContext = "hi";
+      messageDiv.innerText = "hi";
     </script>
   </body>
 </html>
