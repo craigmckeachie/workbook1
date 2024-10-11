@@ -12,7 +12,7 @@
       <!-- and what type of element it is -->
       <!---------------element-------------------->
       <!--opening tag----><!--the content--><!--closing tag---->
-      <div id="messageDiv">Secret message<!--the content--></div>
+      <div id="messageDiv"><!--the content--></div>
       <input id="nameInput" type="text" value="" placeholder="enter name" />
     </main>
     <script>
@@ -66,8 +66,12 @@
       var currentName = nameInput.value;
       console.log(currentName);
       
-
       //#4 Create a function to do something, (Ex. set the element content)
+     function printMessage() {
+        messageDiv.innerText = "hi inside function";
+     }
+     printMessage();
+
 
       //#5 Make that function happen when a user event happens (Ex. add button and on click)
     </script>
